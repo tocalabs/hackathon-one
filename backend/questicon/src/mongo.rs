@@ -1,4 +1,6 @@
 use mongodb::{Client, options::ClientOptions};
+mod models;
+use models::{Character};
 
 let mut client_options = ClientOptions::parse("mongodb://localhost:27017").await?;
 
