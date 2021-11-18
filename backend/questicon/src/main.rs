@@ -7,6 +7,8 @@ use serde::{Deserialize, Serialize};
 struct Character {
     name: String,
     level: i16,
+    experience: i16,
+    class: 
     is_dead: bool
 }
 
