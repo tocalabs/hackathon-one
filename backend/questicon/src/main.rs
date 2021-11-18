@@ -9,7 +9,7 @@ struct Character {
 }
 
 impl Character {
-    fn new(name: String) -> Self {
+    pub fn new(name: String) -> Self {
         Character {name, level: 0, is_dead: false}
     }
 }
