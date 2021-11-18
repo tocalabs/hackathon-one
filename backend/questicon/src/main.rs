@@ -1,7 +1,9 @@
 #[macro_use] extern crate rocket;
+use serde::{Deserialize, Serialize};
 
 
 
+#[derive(Serialize, Deserialize)]
 struct Character {
     name: String,
     level: i16,
