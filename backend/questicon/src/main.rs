@@ -43,6 +43,7 @@ trait Survival {
     fn attack() -> i16;
     fn defend() -> i16;
 }
+
 #[derive(Debug, PartialEq)]
 struct Character {
     name: String,
@@ -66,8 +67,6 @@ impl Character {
     pub fn new(name: String) -> Self {
         Character {
             name,
-            level: 0,
-            is_dead: false,
             ..Default::default()
         }
     }
