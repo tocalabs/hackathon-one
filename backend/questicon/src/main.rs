@@ -2,6 +2,7 @@
 extern crate rocket;
 
 use std::ops;
+mod state;
 
 #[derive(Debug, PartialEq)]
 struct Xp(i8);
